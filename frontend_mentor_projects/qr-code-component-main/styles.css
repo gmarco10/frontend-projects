@@ -8,8 +8,6 @@
   --font-size: 15px;
   --font-weight-bold: 700;
   --font-weight-normal: 400;
-
-
 }
 
 body{
@@ -19,15 +17,24 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.main {
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+main {
   background-color: var(--secondary-background-color);
   border-radius: 3%;
   width: min-content;
   text-align: center;
   padding: 12px;
+  margin: auto auto;
 }
 
 .texts{
@@ -52,7 +59,7 @@ body{
   width: 288px;
 }
 
-.attribution{
+footer{
   font-size: 11px;
   text-align: center;
 
