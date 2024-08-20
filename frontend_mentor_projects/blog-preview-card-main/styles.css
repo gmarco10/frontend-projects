@@ -1,40 +1,37 @@
 :root {
-  --yellow-color: #F4D04E;
-  --gray-color: #111111;
-  --gray-500-color: #6B6B6B;
-  --white-color: #FFFFFF;
+  --primary-color: #F4D04E;
+  --text-color-dark: #111111;
+  --text-color-muted: #6B6B6B;
+  --secondary-background-color: #FFFFFF;
+
+  --font-family-main: "Figtree", serif;
 }
 
-body{
-  background-color: var(--yellow-color);
-
+body {
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-
-  font-family: "Figtree", serif;
+  font-family: var(--font-family-main);
 }
 
-.card{
+.card {
   width: 336px;
   padding: 20px;
   border-radius: 20px;
-
-  border: 1px solid var(--gray-color);
+  border: 1px solid var(--text-color-dark);
   box-shadow: 8px 8px;
-
-  background-color: var(--white-color);
+  background-color: var(--secondary-background-color);
 }
 
-.tag{
-  width: fit-content;
+.tag {
+  display: inline-block;
   padding: 4px 12px;
   border-radius: 4px;
   margin-bottom: 10px;
-
-  background-color: var(--yellow-color);
+  background-color: var(--primary-color);
 }
 
 .date {
@@ -45,18 +42,18 @@ body{
   margin: 10px 0px;
 }
 
-.title:hover{
-  color: var(--yellow-color);
+.title:hover,
+.title:focus {
+  color: var(--primary-color);
   cursor: pointer;
 }
 
 .description {
-  color: var(--gray-500-color);
+  color: var(--text-color-muted);
 }
 
-.author{
+.author {
   margin-top: 15px;
-
   display: flex;
   align-items: center;
 }
@@ -65,42 +62,42 @@ body{
   width: 32px;
 }
 
-#author-name{
+#author-name {
   margin-left: 10px;
   font-weight: 800;
   font-size: small;
 }
 
-.text--preset-1{
+.text--preset-1 {
   font-weight: 800;
   line-height: 150%;
   font-size: 24px;
 }
 
-.text--preset-2{
+.text--preset-2 {
   font-weight: 500;
   line-height: 150%;
   font-size: 16px;
 }
 
-.text--preset-3{
+.text--preset-3 {
   font-weight: 800;
   line-height: 150%;
   font-size: 14px;
 }
 
-#logo{
+#logo {
   margin-bottom: 24px;
   border-radius: 10px;
 }
 
-
-@media (width <= 400px) {
-  #logo{
-    width: -webkit-fill-available;
+@media (max-width: 400px) {
+  #logo {
+    width: 100%;
   }
 
-  .card{
-    width: 290px
+  .card {
+    width: 290px;
+    margin: 0 20px;
   }
 }
