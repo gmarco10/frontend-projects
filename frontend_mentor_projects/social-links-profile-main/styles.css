@@ -1,20 +1,24 @@
 :root {
-  --primary-background-color: hsl(0, 0%, 8%);
-  --secondary-background-color: hsl(0, 0%, 12%);
-  --terciary-background-color: hsl(0, 0%, 20%);
+  --primary-bg-color: hsl(0, 0%, 8%);
+  --secondary-bg-color: hsl(0, 0%, 12%);
+  --tertiary-bg-color: hsl(0, 0%, 20%);
   --text-color: hsl(0, 0%, 100%);
   --hover-color: hsl(75, 94%, 57%);
 
   --font-size: 14px;
-  --font-family-main: "Inter", serif;
+  --font-family-main: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
 }
 
-p {
-  color: var(--text-color)
+p, blockquote {
+  color: var(--text-color);
 }
 
 body {
@@ -25,11 +29,16 @@ body {
   align-items: center;
   justify-content: center;
 
-  background-color: var(--primary-background-color);
+  background-color: var(--primary-bg-color);
   font-family: var(--font-family-main);
   font-size: var(--font-size);
 }
 
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .card {
   padding: 20px;
   border-radius: 3%;
@@ -38,23 +47,23 @@ body {
   flex-direction: column;
   align-items: center;
 
-  background-color: var(--secondary-background-color);
+  background-color: var(--secondary-bg-color);
 }
 
 #avatar {
   width: 75px;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .name {
   margin-bottom: 0;
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 .location {
   margin-top: 5px;
   font-weight: 400;
-  color: var(--hover-color)
+  color: var(--hover-color);
 }
 
 .description {
@@ -78,15 +87,16 @@ body {
   margin: 10px 5px;
   width: 275px;
 
-  background-color: var(--terciary-background-color);
+  background-color: var(--tertiary-bg-color);
   color: var(--text-color);
   font-weight: 700;
 
   border-radius: 8%;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .item:hover,
 .item:focus {
-  color: var(--secondary-background-color);
+  color: var(--secondary-bg-color);
   background-color: var(--hover-color);
 }

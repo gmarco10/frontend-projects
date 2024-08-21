@@ -2,25 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
 
-  <title>Frontend Mentor | Social links profile</title>
+  <title>Frontend Mentor | Social Links Profile</title>
 </head>
 <body>
   <article class="card">
-    <img id="avatar" src="assets/images/avatar.jpeg" alt="Illustration representing user profile">
+    <header>
+      <img id="avatar" src="assets/images/avatar.jpeg" alt="Profile picture of Gonzalo Marco">
+      <h1 class="name"> Gonzalo Marco </h1>
+      <p class="location">America</p>
+    </header>
 
-    <h1 class="name"> Gonzalo Marco </h1>
-    <p class="location">America</p>
-    <p class="description">
-      "Back-end developer, Front-end treinee and avid reader."
-    </p>
+    <blockquote class="description">
+      "Back-end developer, Front-end trainee, and avid reader."
+    </blockquote>
 
-    <div class="items">
+    <nav class="items">
       <a href="https://www.github.com" target="_blank" class="item">
         GitHub
       </a>
@@ -36,7 +38,7 @@
       <a href="https://www.instagram.com" target="_blank" class="item">
         Instagram
       </a>
-    </div>
+    </nav>
   </article>
 </body>
 </html>
