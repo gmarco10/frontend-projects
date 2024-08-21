@@ -1,0 +1,92 @@
+:root {
+  --primary-background-color: hsl(0, 0%, 8%);
+  --secondary-background-color: hsl(0, 0%, 12%);
+  --terciary-background-color: hsl(0, 0%, 20%);
+  --text-color: hsl(0, 0%, 100%);
+  --hover-color: hsl(75, 94%, 57%);
+
+  --font-size: 14px;
+  --font-family-main: "Inter", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: var(--text-color)
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--primary-background-color);
+  font-family: var(--font-family-main);
+  font-size: var(--font-size);
+}
+
+.card {
+  padding: 20px;
+  border-radius: 3%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--secondary-background-color);
+}
+
+#avatar {
+  width: 75px;
+  border-radius: 100%;
+}
+
+.name {
+  margin-bottom: 0;
+  color: var(--text-color)
+}
+
+.location {
+  margin-top: 5px;
+  font-weight: 400;
+  color: var(--hover-color)
+}
+
+.description {
+  margin: 10px 0px;
+  max-width: 275px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin: 10px 5px;
+  width: 275px;
+
+  background-color: var(--terciary-background-color);
+  color: var(--text-color);
+  font-weight: 700;
+
+  border-radius: 8%;
+}
+
+.item:hover,
+.item:focus {
+  color: var(--secondary-background-color);
+  background-color: var(--hover-color);
+}
