@@ -80,6 +80,7 @@ h1 {
 }
 
 .circle {
+  border: none;
   border-radius: 50%;
   background-color: var(--primary-background-color);
   width: 35px;
@@ -106,6 +107,7 @@ h1 {
   border-radius: 0% 0% var(--round-borders);
 
   .circle {
+    border: none;
     background-color: var(--desaturated-dark-blue);
   }
 }
@@ -189,7 +191,8 @@ h1 {
     border-radius: 6%;
 
     .circle {
-        display: none;
+      border: none;
+      display: none;
     }
   }
 
